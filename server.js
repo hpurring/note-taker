@@ -31,7 +31,6 @@ app.get('*', (req, res) => {
     res.sendFile(path.join(__dirname, './Develop/public/notes.html'));
 });
 
-
 // POST /api/notes
 app.post('/api/notes', (req, res) => {
     req.body.id = uuidv4();
@@ -40,7 +39,7 @@ app.post('/api/notes', (req, res) => {
 });
 
 app.delete('/api/notes/:id', (req, res) => {
-    deleteNote(req.body.id, notes);
+    deleteNote(req.params.id, notes);
     res.json(req.body);
 });
 
@@ -59,10 +58,10 @@ function createNewNote(body, notes) {
     return note;
 };
 
-function deleteNote(id, note) {
+function deleteNote(id, notes) {
     for (i in notes) {
-        if(notes[i].id === req.body.id) {
-            notes.splice(x, 1);
+        if (notes[i].id === notes.id) {
+            notes.splice(i, 1);
         }
     };
     fs.writeFileSync(
