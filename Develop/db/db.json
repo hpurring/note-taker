@@ -1,14 +1,1 @@
-{
-  "notes": [
-    {
-      "title": "Test Title",
-      "text": "Test text"
-    },
-    [
-      {
-        "title": "new note!",
-        "text": "look at me!"
-      }
-    ]
-  ]
-}
+[{"title":"new new note!","text":"look at me!","id":0},{"title":"New note again!","text":"hey!","id":1},{"title":"sdaf","text":"sdafsaf","id":2},{"title":"asdf","text":"sadf","id":3},{"title":"new note test","text":"random","id":4},{"title":"yet another test","text":"yes test yes\n","id":"bf98a3f9-40f7-4598-ad50-fd3eb3ebd875"}]

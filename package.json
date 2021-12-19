@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/coding-boot-camp/miniature-eureka#readme",
   "dependencies": {
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "uuid": "^8.3.2"
   }
 }
