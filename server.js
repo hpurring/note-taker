@@ -39,7 +39,8 @@ app.post('/api/notes', (req, res) => {
 });
 
 app.delete('/api/notes/:id', (req, res) => {
-    deleteNote(req.params.id, notes);
+    let id = req.params.id;
+    deleteNote(id, notes);
     res.json(req.body);
 });
 
@@ -59,8 +60,8 @@ function createNewNote(body, notes) {
 };
 
 function deleteNote(id, notes) {
-    for (i in notes) {
-        if (notes[i].id === notes.id) {
+    for (let i = 0; i < notes.length; i++) {
+        if (notes[i].id === id) {
             notes.splice(i, 1);
         }
     };
