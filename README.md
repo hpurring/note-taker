@@ -4,7 +4,7 @@
 
   [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-  Note Taker allows you to create and save notes. The app uses an Express.js back end and saves and retrieves note data from a JSON file.
+  Note Taker allows you to create, save, and delete notes. The app uses an Express.js back end and saves and retrieves note data from a JSON file.
 
   ## Table of Contents
   * [Installation](#installation)
